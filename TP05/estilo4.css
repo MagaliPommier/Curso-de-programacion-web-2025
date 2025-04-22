@@ -1,0 +1,21 @@
+#origen{
+    color: red;
+}
+#cascada{
+    color: chartreuse;
+}
+#cascada{
+    color: rgb(243, 32, 116);
+}
+div{
+    color: rgb(225, 240, 12) !important;
+}
+.claseEsp{
+    color: darkgray;
+}
+#idEsp{
+    color: rgb(219, 172, 17);
+}
+div#idesp{
+    color: blueviolet;
+}
