@@ -1,24 +1,97 @@
-#parrafo1, #div1, #a1{
+#parrafo1,
+#div1,
+#a1 {
     color: aqua;
 }
-#div2{
+
+#div2 {
     color: blue;
 }
-#div2 p{
+
+#div2 p {
     color: brown;
 }
+
 #div2 p b {
     color: rgb(25, 203, 99);
 }
-#div2 p b a{
+
+#div2 p b a {
     color: red;
 }
-#div3{
+
+#div3 {
     color: green;
 }
-#div3 > p{
+
+#div3>p {
     color: red;
 }
-#div3 > div > p{
+
+#div3>div>p {
     color: rgb(244, 232, 7);
+}
+
+.colorPrimario {
+    color: brown;
+}
+
+.colorSecundario {
+    color: red;
+}
+
+.fondoPrimario {
+    background-color: rgb(245, 142, 8);
+}
+
+.fondoSecundario {
+    background-color: rgb(56, 11, 234);
+    color: white;
+}
+
+.textoGrande {
+    font-size: x-large;
+}
+
+.textoChico {
+    font-size: x-small;
+}
+
+#pseudo {
+    background-color: rgb(74, 155, 241);
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+#pseudo:hover {
+    background-color: chartreuse;
+}
+
+#pseudo:active {
+    background-color: crimson;
+}
+
+#div4 div {
+    width: 50px;
+    height: 40px;
+    background-color: aqua;
+    display: inline-block;
+
+}
+
+#div4 div:first-child {
+    background-color: brown;
+}
+
+#div4 div:last-child {
+    background-color: chartreuse;
+}
+
+#div4 div:nth-child(7) {
+    background-color: blue;
+}
+#div4 div:nth-child(odd) {
+    background-color: rgb(226, 14, 152);
 }

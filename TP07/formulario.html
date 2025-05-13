@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div id="cont">
+        <header>
+            <h1>Formulario de contacto</h1>
+        </header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Nosotros</a>
+            <a href="">Producto</a>
+            <a href="">Contacto</a>
+        </nav>
+        <form action="" method="get">
+            <span>Dejanos tus datos para responderte a la brevedad</span>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+            <label for="apellido"></label>Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+            <label for="DNI"></label>DNI</label>
+            <input type="text" name="dni" id="dni" minlength="7" maxlength="8">
+            <label for="email"></label>Email</label>
+            <input type="email" name="email" id="email">
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="Telefono" id="telefono" value="+54911">
+            <label for="nacimiento"></label>Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+            <label for="doc"></label>Documento</label>
+            <input type="file" name="documento" id="documento">
+
+            <span>
+                <h2>Genero</h2>
+                <input type="radio" name="Genero" id="masculino" value="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="Genero" id="femenino" value="femenino">
+                <label for="masculino">masculino</label>
+                <input type="radio" name="Genero" id="no responder" value="no responder">
+                <label for="no responder">Prefiero no responder</label>
+            </span>
+
+            <label for="nacionalidad">Nacionalidad</label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="paraguaya">Paraguaya</option>
+                <option value="argentina">Argentina</option>
+                <option value="chilena">Chilena</option>
+                <option value="seleccione nacionalidad" selected disabled>Seleccione de la lista</option>
+            </select>
+
+            <span>
+                <h2>Cursos de su interes</h2>
+                <input type="checkbox" name="progweb" id="progweb" value="progweb">
+                <label for="progweb">Sueldos</label>
+                <input type="checkbox" name="sublimacion" id="sublimacion" value="sublimacion">
+                <label for="sublimacion">sublimacion</label>
+                <input type="checkbox" name="sueldos" id="sueldos" value="Sueldos">
+                <label for="sueldos">Liquidacion de sueldos</label>
+            </span>
+            <span>
+                <h2>Consultas</h2>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="256" placeholder="Maximo 256 caracteres"></textarea>
+                
+            </span>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </div>
+</body>
+
+</html>

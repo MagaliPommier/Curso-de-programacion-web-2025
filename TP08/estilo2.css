@@ -1,0 +1,38 @@
+h2{
+    margin: 0;
+}
+.caja{
+    width: 500px;
+    padding: 16px;
+    margin: 16px auto;
+}
+#texto1{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    -moz-text-align-last: center;
+}
+#texto1 span{
+    text-decoration: underline;
+    text-decoration-color :#ff0000;
+    text-decoration-thickness: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+#texto2{
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 170%;
+    letter-spacing: 3px;
+}
+#texto3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: crimson;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#texto3:hover{
+    white-space: wrap;
+}
