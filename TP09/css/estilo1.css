@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: cadetblue;
+}
+#contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+background-color: rgb(248, 248, 248);
+min-height: 100vh;
+}
+#sombraTexto1{
+    font-size: 42px;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.502);
+}
+#sombraTexto2{
+      font-size: 35px;
+    font-weight: 600;
+    text-shadow:3px 3px 3px  rgba(129, 16, 16, 0.502), 6px 8px 8px blue;
+}
+.caja{
+    display: block;
+    width: 300px;
+    background-color: chocolate;
+padding: 16px;
+margin: 16px;
+}
+#sombaCaja1{
+    box-shadow: 6px 6px 6px black ;
+}
+#sombraCaja4{
+    box-shadow: 3px 3px red, 6px 6px yellow, 9px 9px green, 12px 12px blue;
+}
+#sombraCaja2{
+    box-shadow: 7px 7px 8px pink inset;
+}
+#sombraCaja3{
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px black, 0 6px 20px black ;
+}
+#Opacidad{
+    opacity: 0.5;
+}
+#Redimensionar{
+    resize: both;
+    overflow: auto;
+}
