@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: rgb(36, 34, 34);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contenedor {
+    background-color: aliceblue;
+    width: 70vw;
+    margin: auto;
+    min-height: 100vw;
+}
+
+header {
+    font-size: 3em;
+    font-weight: 600;
+    padding: 2rem;
+    color: rgb(120, 36, 36)
+}
+nav{
+    background-color: rgb(230, 155, 80);
+     position: sticky;
+     top: 0;
+    z-index: 10;
+}
+nav a {
+    background-color: green;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+    transition: 0.3s;
+    color: white;
+   
+}
+
+nav a:first-child {
+    padding-left: 2em;
+}
+
+nav a:hover {
+    background-color: rgb(105, 47, 12);
+}
+
+main,
+section,
+footer {
+    padding: 2em;
+}
+
+footer {
+    background-color: green;
+    color: white
+}
+
+#galeria {
+    padding: 2rem;
+    font-size: 0;
+}
+
+#galeria div {
+
+    display: inline-block;
+    width: 20%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+      position: relative;
+}
+
+#galeria div img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 1s; transform: 0.4s;
+    cursor: pointer;
+}
+ #galeria div img:hover{
+    filter: grayscale(0%);
+    transform: scale(150%);
+    position: absolute;
+    bottom: 0;
+     z-index: 2;
+     border: 6px solid white;
+     border-bottom: 16px solid white;
+     box-sizing: border-box;
+     box-shadow:1px 1px 15px black ;
+ }
+ #subir{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    background-color: white;
+ }
+ #subir:hover{
+    background-color: blueviolet;
+    color: beige;
+ }
