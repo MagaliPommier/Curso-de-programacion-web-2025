@@ -1,64 +1,77 @@
 body {
     margin: 0;
     background-color: rgb(43, 119, 181);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#contenedor {
+#cont {
     margin: 0 auto;
     max-width: 800px;
     background-color: white;
-}
-
-#contenedor h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2em;
-    margin: 0 auto;
-    text-align: center;
     color: rgb(20, 87, 123);
-    padding-bottom: 20px;
-    padding-top: 20px;
-
+    text-align: center;
+    font-size: 15;
+    padding: 0 2em;
 }
-
-
-#contenedor img {
-
+#cont h1{
+    margin: 0%;
+}
+#cont img {
     display: block;
-    width: 14em;
+    width: 15rem;
     height: auto;
     margin: 0 auto;
 }
 
-#contenedor table {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0 auto;
+#cont1 {
+
+    font-size: 1.2rem;
+    margin:0;
+    text-align: left;
+    color: rgb(251, 251, 251);
     background-color: rgb(20, 87, 123);
-    width: 90%;
-
-
-}
-#contenedor2 p{
-max-width: 50%;
-padding-left: 5%;
-display: inline-block;
+    padding: 0.6rem;
+    max-width: 100%;
+    margin-top: 0.9em;
+    margin-bottom: 0.1em;
+    padding-left: 1.6em;
 }
 
-#contenedor th {
+#cont1 a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+#cont2 p {
+    max-width: 60%;
+    display: inline-block;
+    background-color: rgb(20, 87, 123);
+    font-size: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    
+}
+
+
+#cont2 img{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+
+}
+#cont2 p {
+    background-color: white;
+    color: black;
+    text-align: left;
+    max-width: 50%;
+    display: inline-block;
+    size
+}
+#cont th {
     margin: 0%;
     padding: 10px;
-    border-collapse: collapse;
-    display: inline-block;
-    background-color: rgb(20, 87, 123);
-    color: beige;
 
-}
-#contenedor2 img{
-    
-    display: inline-block;
-    width: 14em;
-    vertical-align: top;
-    margin-left: 11.5%;
-    margin-top: 3%;
-
-    
-}
+    text-align: center;
+    background-color: rgb(244, 245, 246);
+    color: beige;}
