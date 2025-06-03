@@ -66,12 +66,41 @@ body {
     text-align: left;
     max-width: 50%;
     display: inline-block;
-    size
+    
 }
-#cont th {
-    margin: 0%;
-    padding: 10px;
 
+#cont th {
+    margin:0%;
+    padding: 10px;
     text-align: center;
     background-color: rgb(244, 245, 246);
-    color: beige;}
+    color: beige;
+}
+
+#cont main h1{
+    margin: 0%;
+    text-align: left;
+    border-bottom: 3px solid rgb(20, 87, 123);
+    color: black;
+    padding-top: 0.5em;
+    
+}
+
+#contForm{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 2em;
+
+}
+form{
+    padding-top: 1em;
+    margin: 0%;
+    margin-top: 2em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+   border: 5px black solid;
+   width: 57%;
+   box-shadow: ;
+}
