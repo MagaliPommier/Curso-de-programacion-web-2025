@@ -80,3 +80,68 @@
     bottom: 600px;
     
 }
+#contflyer{
+    margin: 0%;
+    background-color: rgb(71, 181, 214);
+    width: 300px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+#contflyer h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    transition: 1s;
+    font-size: xx-large;
+    transition: 1s;
+}
+#contflyer h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 110px;
+    right: -120px;
+    transition: 1s;
+    font-size: x-large;
+    transition: 1s;
+}
+#contflyer a{
+    padding: 0.5em;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: -130px;
+    transition: 1s;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-decoration: none;
+     font-size: x-large;
+     border-radius:2em;
+     transition: 1s;
+}
+#contflyer img{
+    margin: 0%;
+    position: absolute;
+    bottom: 10px;
+    width: 16em;
+    height: auto;
+    right: -250px;
+    transition: 1s;
+}
+#contflyer:hover h3{
+    left: 100px;
+    transition-delay: 0.5s;
+}
+#contflyer:hover h4{
+    transition-delay: 1s;
+    right: 90px;
+}
+#contflyer:hover a{
+    transition-delay: 1.5s;
+    left: 90px;
+}
+#contflyer:hover img{
+right: 8%;
+transition-delay: 2s;
+}
