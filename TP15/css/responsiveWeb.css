@@ -1,0 +1,78 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(1, 36, 19);
+    display: flex;
+    justify-content: center;
+}
+
+#contPrincipal {
+    margin: 0% auto;
+    background-color: white;
+    max-width: 800px;
+padding-top: 1.5em;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+
+}
+ header h1 {
+   
+    display: flex;
+
+}
+
+#contPrincipal nav {
+    background-color: rgb(36, 90, 126);
+    padding: 0.5em;
+    margin-top: 0.8em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+#contPrincipal nav a{
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    padding: 1em;
+}
+main{
+    padding: 1em;
+    display:flex;
+    gap: 1.5em;
+}
+main article{
+    background-color: gray;
+    padding: 1em;
+}
+#galeria{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    row-gap: 1em;
+}
+#galeria img{
+width: 32%;
+filter: grayscale(100%);
+}
+#galeria img:hover{
+    filter: grayscale(0%);
+}

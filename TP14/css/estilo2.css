@@ -1,58 +1,101 @@
-
-#cont{
-     background-color: blueviolet;
+#cont {
+    background-color: blueviolet;
     padding: 1em;
     font-size: 2em;
-    
+
 }
 
-@media screen and (width < 100px){
-    #caja1{
+@media screen and (width < 100px) {
+    #caja1 {
         display: none;
     }
 }
-@media screen and (width < 200px){
-    #caja2{
-    display: none;
-    }
-}
-@media screen and (width < 300px){
-    #caja3{
+
+@media screen and (width < 200px) {
+    #caja2 {
         display: none;
     }
 }
-@media screen and (width < 400px){
-    #caj4{
+
+@media screen and (width < 300px) {
+    #caja3 {
         display: none;
     }
 }
-@media screen and (width < 500px){
-    #caja5{
+
+@media screen and (width < 400px) {
+    #caja4 {
         display: none;
     }
 }
-@media screen and (width < 600px){
-    #caja6{
+
+@media screen and (width < 500px) {
+    #caja5 {
         display: none;
     }
 }
-@media screen and (width < 700px){
-    #caja7{
+
+@media screen and (width < 600px) {
+    #caja6 {
         display: none;
     }
 }
-@media screen and (width < 800px){
-    #caja8{
+
+@media screen and (width < 700px) {
+    #caja7 {
         display: none;
     }
 }
-@media screen and (width < 900px){
-    #caja9{
+
+@media screen and (width < 800px) {
+    #caja8 {
         display: none;
     }
 }
-@media screen and (width < 1000px){
-    #caja10{
+
+@media screen and (width < 900px) {
+    #caja9 {
+        display: none;
+    }
+}
+
+@media screen and (width < 1000px) {
+    #caja10 {
+        display: none;
+    }
+}
+
+nav {
+    background-color: coral;
+    display: flex;
+
+    @media(width < 400px) {
+        flex-direction: column;
+    }
+
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+     @media(width < 300px){
+        display: none;
+}}
+
+nav a:hover {
+    background-color: brown;
+}
+nav #hamburguesa{
+    font-size: 1.4em;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    @media(width >300px){
         display: none;
     }
 }
