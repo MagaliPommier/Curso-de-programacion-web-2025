@@ -39,12 +39,54 @@ if(monto > 50000){
 }
   */
 
-let edad = window.prompt("Ingresa tuy edad: ");
+/*let edad = window.prompt("Ingresa tuy edad: ");
 if (edad > 18) {
      console.log( "Sos mayor de edad")
 } else {
-    console.log( "Sos menor de edad ")}
+    console.log( "Sos menor de edad ")}*/
 
     //operador ternario
-    let respEdad = edad > 17 ? "Mayor" : "Menor";
-     console.log(respEdad);
+   /* let respEdad = edad > 17 ? "Mayor" : "Menor";
+     console.log(respEdad);*/
+
+     //Operadores && y ||
+
+    /* let valor1 = false
+     let valor2 = true
+     console.log("operador &&", valor1 && valor2);
+     console.log("operador ||", valor1 || valor2);
+
+
+if(10 == 10 && 20 == 30){
+    console.log("Los numeros coinciden");
+} else {
+    console.log("Los numeros no coinciden");
+}
+
+let cantidad = window.prompt("cantidad de productos");
+let valorCompra = window.prompt("total de la compra");
+
+if (cantidad > 10 && valorCompra > 20000){
+    let valorFinal = valorCompra * 0.8;
+console.log("Valor final con descuento: " + valorFinal);
+} else {
+    console.log("Valor final sin descuento: " + valorCompra);
+}*/
+
+//Switch
+console.clear();
+let color = window.prompt("color del semaforo");
+switch(color){
+    case "verde":
+    console.log("Avanzar");
+    break;
+    case "amarillo":
+        console.log("precaucion");
+        break;
+        case "rojo":
+            console.log("detenerse");
+            break;
+            default:
+                console.log("Semaforo roto");
+                break;
+}
