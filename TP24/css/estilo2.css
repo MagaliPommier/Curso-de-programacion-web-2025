@@ -32,3 +32,12 @@ body{
         background-color: rgb(85, 3, 172);
 
 }
+#listaAsistencias{
+    background-color: white;
+}
+#agregar {
+    background-color: blueviolet;
+}
+#ver {
+    background-color: blueviolet;
+}
