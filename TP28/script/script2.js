@@ -13,42 +13,57 @@ document.querySelector("#btnAgregarTarea").addEventListener("click", () => {
     tareas.push(objTarea);
     localStorage.setItem("tareas", JSON.stringify(tareas));
     //limpiar pagina y mostrar datos
+    //crear la vista
     tarea.value = "";
-    //limpiar tbody
-    document.querySelector("tbody").innerHTML = "";
-    tareas.forEach((tarea) => {
-        //console.log(tarea);
-        
-         
-        document.querySelector("tbody").innerHTML += `<tr>
-                <td>${tarea.id}</td>
-                <td>${tarea.tarea}</td>
-                <td><div class="btn verde">${tarea.estado}</div></td>
-                <td>
-                    <div class="btn azul">Editar</div>
-                    <div class="btn naranja">Borrar</div>
-                </td>
-            </tr>`
-    })
+    crearVista();
 });
 //cargar datos del localStorage
 function buscarDatosPrevios() {
     let tareasEnLS = localStorage.getItem("tareas");
     tareasEnLS = JSON.parse(tareasEnLS) || [];
-      document.querySelector("tbody").innerHTML = "";
-    tareasEnLS.forEach((tarea) => {
-    
-        
-         
+    //pasarlo como variable global
+    tareas = tareasEnLS;
+
+    crearVista();
+}
+buscarDatosPrevios();
+
+function crearVista() {
+    document.querySelector("tbody").innerHTML = "";
+    tareas.forEach((tarea) => {
+        if (tarea.estado == "Eliminada") { return }
+        //cargar vista actualizada
         document.querySelector("tbody").innerHTML += `<tr>
                 <td>${tarea.id}</td>
                 <td>${tarea.tarea}</td>
-                <td><div class="btn verde">${tarea.estado}</div></td>
+                <td><div class="btn verde btnEstado"data-id=${tarea.id}>${tarea.estado}</div></td>
                 <td>
-                    <div class="btn azul">Editar</div>
-                    <div class="btn naranja">Borrar</div>
+                    <div class="btn azul btnEditar">Editar</div>
+                    <div class="btn naranja btnBorrar" data-id=${tarea.id}>Borrar</div>
                 </td>
             </tr>`
+    });
+    //agregar eventos
+    document.querySelectorAll(".btnEstado").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            //ver estado previo de la propiedad para asignar nuevo estado
+            if (tareas[e.target.dataset.id].estado == "Completa") {
+                tareas[e.target.dataset.id].estado = "Pendiente";
+            } else {
+                tareas[e.target.dataset.id].estado = "Completa";
+            }
+            //guardar modificacion en LS
+            localStorage.setItem("tareas", JSON.stringify(tareas));
+            crearVista();
+        })
+    })
+
+   document.querySelectorAll(".btnBorrar").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            tareas[e.target.dataset.id].estado = "Eliminada";
+            //guardar modificacion en LS
+            localStorage.setItem("tareas", JSON.stringify(tareas));
+            crearVista();
+        })
     })
 }
-buscarDatosPrevios();
