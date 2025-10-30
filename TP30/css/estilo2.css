@@ -1,0 +1,48 @@
+*{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+font-size: 20px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+     gap: 0.5em;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 700vh;
+}
+body span{
+display: flex;
+gap: 1em;
+
+}
+body span nav{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+body header span main{
+    font-size: 80px;
+}
+.btn{
+    width: max-content;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body :hover{
+color: darkgreen;
+background-color: lightgreen;
+}
+body header{
+    color: darkgreen;
+    font-size: 3em;
+}
+footer{
+    background-color: darkgreen;
+    text-align: center;
+}
